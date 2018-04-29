@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/button_red</item>
+    </style>
+
+    <style name="scoreButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">@dimen/buttonText</item>
+    </style>
+
+    <style name="scoreText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/flame_red</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="teamLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="flameImage">
+        <item name="android:layout_width">@dimen/flameImageSize</item>
+        <item name="android:layout_height">@dimen/flameImageSize</item>
+        <item name="android:src">@drawable/flame</item>
+    </style>
+
+</resources>

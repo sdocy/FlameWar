@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Flame War</string>
+    <string name="troll">Internet Troll</string>
+    <string name="knight">Cyber Knight</string>
+    <string name="fake_news">Claimed Knight\'s facts are fake news (+1)</string>
+    <string name="yo_momma">Made a negative comment about Knight\'s mother (+2)</string>
+    <string name="twisty_logic">Led Knight down dark, twisty logic path, Knight contradicts himeself (+3)</string>
+    <string name="valid_point">Made a valid point, stunning Troll for a moment (+1)</string>
+    <string name="snappy_comeback">Delivered snappy comeback to Troll\'s personal attack (+2)</string>
+    <string name="goto_reddit">Ignored Troll and checked for Reddit upvotes instead (+3)</string>
+    <string name="endBattle">End Battle</string>
+    <string name="newBattle">Start New Battle</string>
+    <string name="knight_wins">Cyber Knight has slain the Internet Troll</string>
+    <string name="troll_wins">Internet Troll has crushed the Cyber Knight</string>
+    <string name="draw">After a long fought battle, both sides retreat</string>
+    <string name="info">Use the buttons above to keep score in your favorite epic Internet Flame Wars</string>
+</resources>

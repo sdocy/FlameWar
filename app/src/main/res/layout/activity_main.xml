@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/troll"
+    android:orientation="vertical">
+
+    <!-- title layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/flameImage"/>
+
+        <TextView
+            style="@style/scoreText"
+            android:padding="4dp"
+            android:text="@string/app_name" />
+
+        <ImageView
+            style="@style/flameImage"/>
+
+    </LinearLayout>
+
+    <!-- team A vs team B layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+        <!-- troll layout -->
+        <LinearLayout
+            style="@style/teamLayout">
+            <TextView
+                style="@style/scoreText"
+                android:textSize="20sp"
+                android:text="@string/troll" />
+
+            <TextView
+                style="@style/scoreText"
+                android:id="@+id/troll_score"
+                android:text="0" />
+
+            <Button
+                style="@style/scoreButton"
+                android:onClick="trollPlusOne"
+                android:text="@string/fake_news" />
+
+            <Button
+                style="@style/scoreButton"
+                android:onClick="trollPlusTwo"
+                android:text="@string/yo_momma" />
+
+            <Button
+                style="@style/scoreButton"
+                android:onClick="trollPlusThree"
+                android:text="@string/twisty_logic" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="58dp"
+            android:background="@android:color/darker_gray"></View>
+
+        <!-- knight layout -->
+        <LinearLayout
+            style="@style/teamLayout">
+            <TextView
+                style="@style/scoreText"
+                android:textSize="20sp"
+                android:text="@string/knight" />
+
+            <TextView
+                style="@style/scoreText"
+                android:id="@+id/knight_score"
+                android:text="0" />
+
+            <Button
+                style="@style/scoreButton"
+                android:onClick="knightPlusOne"
+                android:text="@string/valid_point" />
+
+            <Button
+                style="@style/scoreButton"
+                android:onClick="knightPlusTwo"
+                android:text="@string/snappy_comeback" />
+
+            <Button
+                style="@style/scoreButton"
+                android:onClick="knightPlusThree"
+                android:text="@string/goto_reddit" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="" />
+
+    <!-- botton end battle and info buttons layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content">
+        <!-- over-write some of the style attributes for this button -->
+        <Button
+            style="@style/scoreButton"
+            android:id="@+id/result_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:onClick="resetScore"
+            android:text="@string/endBattle" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="0.3"
+            android:background="#00812922"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:onClick="info"
+            android:src="@drawable/information"/>
+    </RelativeLayout>
+</LinearLayout>
