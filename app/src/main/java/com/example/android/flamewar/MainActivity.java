@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         scoreViewTroll.setTextColor(Color.WHITE);
         scoreViewTroll.setText(String.valueOf(trollScore));
         handler.postDelayed(executeRunnable(scoreViewTroll), 100);
-    }
+    } 
 
     // +3 button pressed for troll
     public void trollPlusThree(View view) {
